@@ -119,7 +119,7 @@ const Homepage = () => {
 
     if (responseData?.data && responseData?.data.row_count > 0) {
       //set total row
-      setRowCount(responseData?.data.data[0].full_count);
+      setRowCount(Number(responseData?.data.data[0].full_count));
       setJobList(responseData?.data.data);
     }
 
