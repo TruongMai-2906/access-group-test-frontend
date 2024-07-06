@@ -1,0 +1,20 @@
+.app {
+    position: relative;
+}
+
+.alert {
+    position: absolute;
+    top: -2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 90vw;
+    opacity: 0;
+    transition: 1s;
+}
+
+.alert--show {
+    top: 0;
+    opacity: 1;
+    transition: 1s;
+}
